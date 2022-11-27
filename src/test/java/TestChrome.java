@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class TestChrome {
     ChromeDriver driver = new ChromeDriver();
 
-    public static final String GOOGLE_URL = "https://www.google.lv/?hl=en"
+    public static final String GOOGLE_URL = "https://www.google.lv/?hl=en";
 
     @AfterMethod
     public void tearDown() {
