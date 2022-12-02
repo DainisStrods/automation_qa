@@ -4,12 +4,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestChrome {
-    ChromeDriver driver = new ChromeDriver();
+    ChromeDriver driver;
 
     public static final String GOOGLE_URL = "https://www.google.lv/?hl=en";
+
+    @BeforeMethod
+    public void before() {
+        driver = new ChromeDriver();
+    }
 
     @AfterMethod
     public void tearDown() {
