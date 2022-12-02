@@ -17,7 +17,7 @@ public class TestChrome {
         driver.quit();
     }
 
-    @Test
+    @Test (enabled = false)
     public void chromeTest(){
 
         driver.get(GOOGLE_URL);
